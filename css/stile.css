@@ -1,0 +1,63 @@
+.spedizione{
+    background-color: aqua;
+    text-align: center;
+    margin: 0px;
+    
+}
+nav{
+    width: 50%;
+}
+.logo{
+    
+ 
+}
+.container-fluid{
+
+    margin-top: 10px;
+    font-size: 15px;
+    
+    
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+.menuDestra{
+    border: solid black 2px;
+    width: 13%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+    font-size: 10px;
+    
+}
+.menuDestra>*{
+    width: 50%;
+    height: 50%
+    ;
+    
+    padding-top: 5px;
+    
+}
+img{
+    margin-right: 10px;
+}
+@media screen and (max-width:768px) {
+    nav{
+        order: 1;
+        width: 15%;
+    }
+    .logo{
+        order: 2;
+        width: 70%;
+        text-align: center;
+    }
+    .menuDestra{
+        order: 3;
+        
+        width:15%;
+        max-height: 80px;
+    }
+}
