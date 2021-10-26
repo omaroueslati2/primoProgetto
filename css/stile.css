@@ -21,7 +21,6 @@ section {
   justify-content: space-between;
 }
 #menuDestra {
-  
   width: 13%;
   display: flex;
   flex-wrap: wrap;
@@ -53,14 +52,21 @@ img {
     align-items: center;
     width: 15%;
     max-height: 80px;
-    
-    
   }
-  .local , .user , .paese , .customer {
+  .local,
+  .user,
+  .paese,
+  .customer {
     display: none;
   }
-  .recherche , .user{
+  .recherche,
+  .user {
     position: fixed;
   }
-  
 }
+.carosello1 {
+  border: solid 3px black;
+
+  height: 400px;
+}
+

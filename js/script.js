@@ -1,3 +1,7 @@
+
+
+  $('.carosello1').slick();
+
 window.addEventListener("resize",function(){
     media()
 })
