@@ -1,22 +1,51 @@
 .spedizione {
-  background-color: aqua;
+  background-color: #002d53;
   text-align: center;
   margin: 0px;
 }
 
-nav {
-  width: 50%;
+.menuCentrale{
+  background-color: #ffffff;
+  width: 80%;
+  max-height: 65px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.8em;
 }
-
+.menuCentrale a{
+  margin: 15px;
+  margin-top: 20px;
+  color: #002d53;
+}
 .logo {
+  width: 13%;
+  background-color: white;
+  
 }
-
-.container-fluid {
-  margin-top: 10px;
-  font-size: 15px;
+.pulsante{
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  width: 40px;
+  height: 30px;
+  max-width: 40px;
+  max-height: 30px;
+  margin-left: 1%;
+  display: none;
+  text-align: center;
+}
+.pulsante span{
+  
+  background-color:rgb(49, 9, 9);
+  width: 60%;
+  height: 7%;
+  margin: 3px;
+  position: absolute;
 }
 
 section {
+  max-height: 65px;
+  min-height: 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -27,25 +56,64 @@ section {
   text-align: center;
   justify-content: space-around;
   font-size: 10px;
+  background-color: white;
 }
 #menuDestra > * {
   width: 50%;
   height: 50%;
   padding-top: 5px;
 }
-img {
+.logo img {
   margin-right: 10px;
+  min-width: 15%;
+  
 }
 @media screen and (max-width: 995px) {
-  nav {
-    order: 1;
-    width: 30%;
+  .pulsante{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .prima{
+    display: block;
+    top: 20%;
+  }
+  .sconda{
+    top:50%;
+    display: block;
+  }
+  .terza{
+    top: 80%;
+    display: block;
+
+  }
+  .primaS{
+    display: none;
+  }
+  .secondaS{
+    top:50%;
+    transform: rotate(45deg);
+  }
+  .terzaT{
+    top: 50%;
+    transform: rotate(-45deg);
+  }
+  .logo img {
+    margin-right: 10px;
+    width: 20%;
+    height: 6%;
+    position: fixed;
+    }
+
+  .menuCentrale{
+    display: none;
   }
   .logo {
     order: 2;
-    width: 65%;
+    width: 85%;
     text-align: center;
   }
+  
   #menuDestra {
     order: 3;
     justify-content: space-around;
@@ -66,7 +134,7 @@ img {
   .slick-initialized .slick-slide {
     display: flex;
     justify-content: end;
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .detail > * {
     margin: 10%;
