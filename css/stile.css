@@ -80,6 +80,7 @@ section {
   background-color: #ffffff;
   position: absolute;
   z-index: 3;
+  top: 13vh;
   left: -100vw;
 }
 .menuLaterale ul{
@@ -87,7 +88,7 @@ section {
 }
 .menuLaterale ul li{
   border-bottom: solid 1px  gray;
-  width: 96vw;
+  width: 90vw;
   height: 10vh;
   display: flex;
   align-items: center;
@@ -104,11 +105,16 @@ section {
 .menuLaterale ul li embed {
  
 }
+.carosello1{
+  position: relative;
+  top:10vh;
+}
 @media screen and (max-width: 995px) {
   .pulsante{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    z-index: 2;
   }
   .prima{
     display: block;
