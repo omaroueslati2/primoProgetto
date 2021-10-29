@@ -16,11 +16,18 @@ var i = 1 ;
 var elem = $("span")[0]
 var elem1 = $("span")[1]
 var elem2 = $("span")[2]
+var i = 1 
 $(".pulsante").click(function(){
+  
+  console.log(i)
 $(elem).toggleClass("primaS")
 $(elem1).toggleClass("secondaS")
 $(elem2).toggleClass("terzaT")
-  
+if(i%2!=0){$(".menuLaterale").animate({left:"0vw"},1000)}
+else{
+  $(".menuLaterale").animate({left:"-100vw"},1000)
+}
+  i++
  /* if ($(elem1).hasClass("sconda")) {
    add("primaS","secondaS","terzaT")
    remuve("prima","sconda","terza")
@@ -32,14 +39,3 @@ $(elem2).toggleClass("terzaT")
  
   
 })
-function add( pram,param1,param2){
-  $(elem).addClass(pram)
-  $(elem1).addClass(param1)
-  $(elem2).addClass(param2)
-
-}
-function remuve(pram,param1,param2){
-  $(elem).removeClass(pram)
-  $(elem1).removeClass(param1)
-  $(elem2).removeClass(param2)
-}

@@ -68,6 +68,36 @@ section {
   min-width: 15%;
   
 }
+.menuLaterale{
+  width: 100vw;
+  height: 100%;
+  background-color: aquamarine;
+  position: absolute;
+  z-index: 3;
+  left: -100vw;
+}
+.menuLaterale ul{
+  list-style-type:  none; 
+}
+.menuLaterale ul li{
+  border-bottom: solid 1px  gray;
+  width: 96vw;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+  
+  
+}
+.menuLaterale ul li a {
+  color: #002d53;
+  text-decoration: none;
+}
+.menuLaterale ul li embed {
+ 
+}
 @media screen and (max-width: 995px) {
   .pulsante{
     display: flex;
@@ -145,6 +175,7 @@ section {
   width: 100%;
   height: 100%;
 }
+
 }
 .carosello1 {
   height: 100%;
