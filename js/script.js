@@ -18,7 +18,6 @@ var elem1 = $("span")[1]
 var elem2 = $("span")[2]
 var i = 1 
 $(".pulsante").click(function(){
-  
   console.log(i)
 $(elem).toggleClass("primaS")
 $(elem1).toggleClass("secondaS")
