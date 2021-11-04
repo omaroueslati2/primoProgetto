@@ -266,6 +266,52 @@
   flex-wrap: wrap;
   background-color: #fcfcfc;
 }
+.collezioneUomo{
+  width: 98%;
+  height: 70vh;
+  
+}
+.collezioneUomo_titollo{
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 2px;
+  font-size: 40px;
+}
+
+.collezioneUomo_contenuto__img{
+  width: 97%;
+  height: 70%;
+  margin: 3px;
+  border: solid 0.5px rgb(230, 230, 230);
+}
+
+.collezioneUomo_carosello .fa-chevron-left   {
+  color:rgb(8, 8, 8);
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  right: 96%;
+}
+.collezioneUomo_carosello .fa-chevron-right   {
+  color:black;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 96%;
+}
+
+.collezioneUomo_contenuto.slick-slide.slick-active{
+  display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+
+
+
+
+
 
 @media screen and (max-width: 995px) {
   .collezione{

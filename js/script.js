@@ -1,4 +1,28 @@
 /// <reference path="../typings/globals/jquery/index.d.ts" />
+$(".collezioneUomo_carosello").slick({
+  prevArrow: '<i class="fas fa-chevron-left"></i>',
+  nextArrow: '<i class="fas fa-chevron-right"></i>',
+  infinite: false,
+  speed: 300,
+  slidesToShow: 4,
+  slidesToScroll: 4,
+  arrows:true,
+  draggable:true,
+  responsive: [
+    {
+      breakpoint: 995,
+      settings: {
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        
+      }
+    },
+    
+  ]
+});
+
+
+
 $(".carosseloCollezione").slick({
   prevArrow: '<i class="fas fa-chevron-left"></i>',
   nextArrow: '<i class="fas fa-chevron-right"></i>',
