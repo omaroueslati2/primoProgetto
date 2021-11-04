@@ -6,29 +6,23 @@ $(".collezioneUomo_carosello").slick({
   speed: 300,
   slidesToShow: 4,
   slidesToScroll: 4,
-  arrows:true,
-  draggable:true,
+  arrows: true,
+  draggable: true,
   responsive: [
     {
-      breakpoint: 995,
+      breakpoint: 900,
       settings: {
         slidesToShow: 2,
         slidesToScroll: 2,
-        
-      }
+      },
     },
-    
-  ]
+  ],
 });
-
-
 
 $(".carosseloCollezione").slick({
   prevArrow: '<i class="fas fa-chevron-left"></i>',
   nextArrow: '<i class="fas fa-chevron-right"></i>',
-}
- 
-);
+});
 
 $(".secondoCarosselo").slick({
   centerMode: true,
@@ -39,41 +33,37 @@ $(".secondoCarosselo").slick({
   nextArrow: '<i class="fas fa-chevron-circle-right"></i>',
   responsive: [
     {
-        breakpoint: 995,
-        settings: { 
-          centerMode: false,
-          
-         }
+      breakpoint: 900,
+      settings: {
+        centerMode: false,
+      },
     },
-    ]
+  ],
 });
 
 $(".heroBanner").slick({
   prevArrow: '<i class="fas fa-chevron-left"></i>',
   nextArrow: '<i class="fas fa-chevron-right"></i>',
-  
 });
 
-$('.carosello3').slick();
-
+$(".carosello3").slick();
 
 var elem = $(".header_menu__humburger")[0];
-var i = 0
-$(elem).on("click",function () {
-  console.log(this)
-  $(this).toggleClass("open")
-  console.log(i%2 == 0)
-  if (i%2 == 0) {
-    $(".header_menu__mobile").stop().animate({left:"0vw" },1000)
+var i = 0;
+$(elem).on("click", function () {
+  console.log(this);
+  $(this).toggleClass("open");
+  console.log(i % 2 == 0);
+  if (i % 2 == 0) {
+    $(".header_menu__mobile").stop().animate({ left: "0vw" }, 1000);
+  } else {
+    $(".header_menu__mobile").stop().animate({ left: "-100vw" }, 1000);
   }
-  else{
-    $(".header_menu__mobile").stop().animate({left:"-100vw" },1000)
-  }
-  i++
-})
+  i++;
+});
 
 $(window).on("scroll", function () {
- console.log("omar")
+  console.log("omar");
   if ($("html,body").scrollTop().valueOf() > $(".header_sidebar").height()) {
     $(".header_menu").stop().animate({ top: "0vh" }, 500);
   } else {
