@@ -376,8 +376,13 @@ footer >*{
   padding-bottom: 1.6em;
   display: inline-block;
 }
+.scrol{
+  max-width: 100% ;
+  overflow-y: hidden
+}
 
 @media screen and (max-width: 900px){
+
   .NEWSLETTER{
     display: flex;
     height: 90vh;
