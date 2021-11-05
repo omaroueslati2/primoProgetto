@@ -1,4 +1,15 @@
 /// <reference path="../typings/globals/jquery/index.d.ts" />
+
+
+  var elem = $("video")[0]
+  console.log(elem)
+  $(elem).on("click",function(){
+    console.log("difla")
+  })
+
+
+ 
+
 $(".collezioneUomo_carosello").slick({
   prevArrow: '<i class="fas fa-chevron-left"></i>',
   nextArrow: '<i class="fas fa-chevron-right"></i>',
@@ -51,9 +62,9 @@ $(".carosello3").slick();
 var elem = $(".header_menu__humburger")[0];
 var i = 0;
 $(elem).on("click", function () {
-  console.log(this);
+  
   $(this).toggleClass("open");
-  console.log(i % 2 == 0);
+ 
   if (i % 2 == 0) {
     $(".header_menu__mobile").stop().animate({ left: "0vw" }, 1000);
   } else {

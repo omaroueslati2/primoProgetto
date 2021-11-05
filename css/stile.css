@@ -309,22 +309,75 @@
 .presentazione{
   height: 50vh;
   background-color: aquamarine;
+  position: relative;
   
 }
 .background{
   background-color: red;
-    width: 76%;
+    width: 80%;
     height: 25%;
+    position: absolute;
+    left: 8%;
     
 }
 video{
-    width: 600px;
-    height: 300px;
-    position: absolute;
-    left: 10%;
-    z-index: 3;
+      width: 30 vw;
+      height: 30vh;
+      position: absolute;
+      top: 10%;
+      left: 33%;
+      z-index: 3;
     
 }
+.presentazione_playOn{
+  position: absolute;
+  top: 38%;
+  left: 48%;
+  z-index: 6;
+
+}
+.presentazione_playStop{
+  position: absolute;
+  top: 38%;
+  left: 48%;
+  z-index: 6;
+
+}
+
+.NEWSLETTER{
+  display: flex;
+  height: 500px;
+  background-color: aquamarine;
+
+}
+.NEWSLETTER_inscrizione{
+    width: 50%;
+    float: left;
+    margin: 70px auto 60px auto;
+    display: flex;
+    flex-direction: column;
+    height: 483 px;
+    background-color: #fafafa;
+    padding: 40px 60px 0;
+
+}
+
+.NEWSLETTER_inscrizione__textarea{
+  border: 1px
+  solid #000;
+  width: 79%;
+  height: 60px;
+  margin-right: 20px;
+  padding-left: 15px; 
+  
+  }
+
+
+
+
+
+
+
 
 
 body > *{
