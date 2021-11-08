@@ -1,5 +1,18 @@
 /// <reference path="../typings/globals/jquery/index.d.ts" />
 
+var child = $(".header_menu__centrale").children()
+console.log(child)
+
+$(child[0]).on({
+  mouseenter: function () {
+    $($(".menu_nascosto")[0]).toggleClass("nuoviArrivi_menuINvisibile")
+    $($(".menu_nascosto")[0]).toggleClass("nuoviarrivi_menu")  },
+  mouseleave: function () {
+    $($(".menu_nascosto")[0]).toggleClass("nuoviArrivi_menuINvisibile")
+    $($(".menu_nascosto")[0]).toggleClass("nuoviarrivi_menu")  }
+})
+
+
 var elem = $("video")[0]; /*play video*/
 console.log(elem);
 $(elem).on("click", function () {
@@ -67,29 +80,34 @@ $(elem).on("click", function () {
   console.log($(window).width());
   if (i % 2 == 0 && $(window).width() < 900) {
     $(".header_menu__mobile").stop().animate({ left: "0vw" }, 1000);
+    
     $("html,body").css({
-      "max-width": "100%",
+      "height": '100%',
       "overflow-y": "hidden"
     })
   } else {
     $(".header_menu__mobile").stop().animate({ left: "-100vw" }, 1000);
     $("html,body").css({
-      
-      "overflow-y": "scroll"
+      "height": "auto",
+      "overflow-y": "auto"
     })
   }
   i++;
 });
+
 $(window).on("resize", function () {
   if ($(window).width() > 995) {
+    $("html,body").css({
+      "height": "auto",
+      "overflow-y": "auto"
+    })
     $(".header_menu__mobile").stop().animate({ left: "-100vw" }, 1000);
   }
 });
 $(window).on("scroll", function (e) {
-  console.log("omar");
+  
   if ($("html,body").scrollTop().valueOf() > $(".header_sidebar").height()) {
     $(".header_menu").stop().animate({ top: "0vh" }, 500);
-    console.log(e);
   } else {
     $(".header_menu").stop().animate({ top: "4vh" }, 500);
   }
