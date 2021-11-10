@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" />
   <link rel="stylesheet" href="../css/all.min.css" />
   <link rel="stylesheet" href="../css/stile.css" />
-  
+  <link rel="stylesheet" href="../css/bootstrap.min.css">
 
   <title>harmontblaine</title>
 </head>
@@ -44,21 +44,45 @@
           <p>Store Locator</p>
         </div>
         <div class="header_menu__iconUser">
-          <img src="../img/customer-support.png" class="customer" />
-          <img src="../img/bag (1).png" class="bag" />
+          <img src="../img/outil-de-recherche.png" />
+          <img  data-bs-toggle="modal" data-bs-target="#exampleModal" src="../img/user.png">
         </div>
         <div class="header_menu__iconCard">
-          <img src="../img/outil-de-recherche.png" />
-          <img src="../img/user.png" />
+          
+          
+          <img src="../img/customer-support.png" class="customer" />
+          <img src="../img/bag (1).png" class="bag" />
+
         </div>
       </div>
     </section>
+    <div class="modal  fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog .modal-fullscreen-sm-down modal.ms">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Accesso</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+                <input type="text" value="    Indirizzo e-mail " required>
+                <input type="text" value="     Password" required>
+                <span class="accesso">Ti sei registrato prima del 11 novembre 2019?</span>
+                <a href="" class="link">cambia password per continuare</a>
+                <a href="" class="link">password dimenticata</a>
+                <button>LOGIN</button>
+                <span class="accesso">non si dispone di un account?</span>
+                <a href="" class="link">CREA ACCOUNT</a>
+              
+          </div>
+        </div>
+      </div>
+    </div>
   </header>
   <div class="menu_nascosto nuoviArrivi_menuINvisibile">
     <div>
       <span class="nuoviarrivi_menu__title">UOMO</span>
       <span class="nuoviarrivi_menu__contenuto">Abbigliamento</span>
-      <span class="nuoviarrivi_menu__contenuto">Accessori</span> 
+      <span class="nuoviarrivi_menu__contenuto">Accessori</span>
     </div>
     <div>
       <span class="nuoviarrivi_menu__title"> DONNA</span>
@@ -70,6 +94,85 @@
     </div>
     <img class="nuoviarrivi_menu__img" src="../img/img_header1.webp" alt="">
   </div>
+  <div class="menu_nascosto nuoviArrivi_menuINvisibile">
+    <div>
+      <span class="nuoviarrivi_menu__title">ABBIGLIAMENTO</span>
+      <span class="nuoviarrivi_menu__contenuto">CAMICIE</span>
+      <span class="nuoviarrivi_menu__contenuto">POLO</span>
+      <span class="nuoviarrivi_menu__contenuto">MAGLIERIA</span>
+      <span class="nuoviarrivi_menu__contenuto">PANTALONI</span>
+      <span class="nuoviarrivi_menu__contenuto">T-SHIRT</span>
+      <span class="nuoviarrivi_menu__contenuto">GIACCHE E GIUBBOTTI</span>
+    </div>
+    <div>
+      <span class="nuoviarrivi_menu__title"> ACCESSORI</span>
+      <span class="nuoviarrivi_menu__contenuto">CINTURE</span>
+      <span class="nuoviarrivi_menu__contenuto">SCIARPE</span>
+      <span class="nuoviarrivi_menu__contenuto">CAPPELLI</span>
+      <span class="nuoviarrivi_menu__contenuto">BORSE E PELLETTERIA</span>
+      <span class="nuoviarrivi_menu__contenuto">CALZINI</span>
+      <span class="nuoviarrivi_menu__contenuto">GUANTI</span>
+      <span class="nuoviarrivi_menu__contenuto">MASCHERINE</span>
+    </div>
+    <div>
+      <span class="nuoviarrivi_menu__title">H&B JEANS</span>
+      <span class="nuoviarrivi_menu__contenuto">SCARPE SPORTIVE</span>
+      <span class="nuoviarrivi_menu__contenuto">SCARPE CASUAL</span>
+    </div>
+    <div>
+      <span class="nuoviarrivi_menu__title">SCARPE</span>
+      <span class="nuoviarrivi_menu__contenuto">MAGLIERIA</span>
+      <span class="nuoviarrivi_menu__contenuto">POLO</span>
+      <span class="nuoviarrivi_menu__contenuto">PANTALONI</span>
+      <span class="nuoviarrivi_menu__contenuto">GIACCHE E GIUBBOTTI</span>
+      <span class="nuoviarrivi_menu__contenuto">SCARPE E ACCESSORI </span>
+
+    </div>
+    <img class="nuoviarrivi_menu__img" src="../img/MENUnascosto.webp" alt="">
+  </div>
+  <div class="menu_nascosto nuoviArrivi_menuINvisibile">
+    <div>
+      <span class="nuoviarrivi_menu__title">ABBIGLIAMENTO</span>
+      <span class="nuoviarrivi_menu__contenuto">CAMICIE</span>
+      <span class="nuoviarrivi_menu__contenuto">POLO</span>
+      <span class="nuoviarrivi_menu__contenuto">MAGLIERIA</span>
+      <span class="nuoviarrivi_menu__contenuto">PANTALONI</span>
+      <span class="nuoviarrivi_menu__contenuto">T-SHIRT</span>
+      <span class="nuoviarrivi_menu__contenuto">GIACCHE E GIUBBOTTI</span>
+    </div>
+    <div>
+      <span class="nuoviarrivi_menu__title"> ACCESSORI</span>
+      <span class="nuoviarrivi_menu__contenuto">CINTURE</span>
+      <span class="nuoviarrivi_menu__contenuto">SCIARPE</span>
+      <span class="nuoviarrivi_menu__contenuto">BORSE E PELLETTERIA</span>
+    </div>
+    <img class="nuoviarrivi_menu__img" src="../img/menunascostodonna.webp" alt="">
+  </div>
+  <div class="menu_nascosto nuoviArrivi_menuINvisibile">
+
+  </div>
+  <div class="menu_nascosto nuoviArrivi_menuINvisibile">
+    <div>
+      <span class="nuoviarrivi_menu__title"> H&B MOOD</span>
+      <span class="nuoviarrivi_menu__contenuto">Woodland</span>
+      <span class="nuoviarrivi_menu__contenuto">eco-adventurers</span>
+      <span class="nuoviarrivi_menu__contenuto">Essentials</span>
+      <span class="nuoviarrivi_menu__contenuto">Capsule Ac Milan</span>
+    </div>
+    <img class="nuoviarrivi_menu__img" src="../img/mood.webp" alt="">
+  </div>
+  <div class="menu_nascosto nuoviArrivi_menuINvisibile">
+    <div>
+      <span class="nuoviarrivi_menu__contenuto">About</span>
+      <span class="nuoviarrivi_menu__contenuto"> I nostri negozi</span>
+      <span class="nuoviarrivi_menu__contenuto">News & Eventi</span>
+      <span class="nuoviarrivi_menu__contenuto"> Progetti Speciali </span>
+      <span class="nuoviarrivi_menu__contenuto"> Profilo Aziendale</span>
+      <span class="nuoviarrivi_menu__contenuto"> Harmont&Blaine </span>
+      <span class="nuoviarrivi_menu__contenuto"> Magazine </span>
+    </div>
+    <img class="nuoviarrivi_menu__img" src="../img/mood.webp" alt="">
+  </div>
   <div class="header_menu__mobile">
     <ul>
       <li>
@@ -77,37 +180,262 @@
         <embed src="../img/right-arrow.png" type="" />
       </li>
       <li>
-        <a href=""> NUOVI ARRIVI FW21</a>
+        <a href="">UOMO</a>
         <embed src="../img/right-arrow.png" type="" />
       </li>
       <li>
-        <a href=""> NUOVI ARRIVI FW21</a>
+        <a href="">DONNA</a>
         <embed src="../img/right-arrow.png" type="" />
       </li>
       <li>
-        <a href=""> NUOVI ARRIVI FW21</a>
+        <a href="">CAPSULE AC MILAN</a>
         <embed src="../img/right-arrow.png" type="" />
       </li>
       <li>
-        <a href=""> NUOVI ARRIVI FW21</a>
+        <a href=""> H&B MOOD</a>
         <embed src="../img/right-arrow.png" type="" />
       </li>
       <li>
-        <a href=""> NUOVI ARRIVI FW21</a>
+        <a href="">STORE LOCATOR</a>
         <embed src="../img/right-arrow.png" type="" />
       </li>
       <li>
-        <a href=""> NUOVI ARRIVI FW21</a>
+        <a href=""> italia|ITA</a>
         <embed src="../img/right-arrow.png" type="" />
       </li>
       <li>
-        <a href=""> NUOVI ARRIVI FW21</a>
+        <a href=""> area acount</a>
         <embed src="../img/right-arrow.png" type="" />
       </li>
       <li>
-        <a href=""> NUOVI ARRIVI FW21</a>
+        <a href=""> servizio_clienti</a>
         <embed src="../img/right-arrow.png" type="" />
       </li>
+      <li>
+        <a href=""> area legale</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">H&B WORLD</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+
+      </li>
+      <li>
+        <a href=""> UOMO</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">DONNA</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">HB JEANS</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+      </li>
+      <li>
+        <a href=""> ABBIGLIAMENTO</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">ACCESSORI</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">SCARPE</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">H&B JEANS</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+      </li>
+      <li>
+        <a href=""> ABBIGLIAMENTO</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">BORSE & ACCESSORI</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+      </li>
+      <li>
+        <a href=""> Woodland</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">ECCO adventurers</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">Essentials</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">capsule Ac Milan</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+      </li>
+      <li>
+        <a href=""> H&B Mood</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile">
+
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+      </li>
+      <li>
+        <a href="">segli il paese </a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href=""> Seleziona lingua</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile acount">
+    <div>
+
+      <span class="CHIUDI">CHIUDI</span>
+
+      <span class="accesso">Accesso</span>
+      <input type="text" value="    Indirizzo e-mail " required>
+      <input type="text" value="     Password" required>
+      <span class="accesso">Ti sei registrato prima del 11 novembre 2019?</span>
+      <a href="" class="link">cambia password per continuare</a>
+      <a href="" class="link">password dimenticata</a>
+      <button>LOGIN</button>
+      <span class="divisore"></span>
+      <span class="accesso">non si dispone di un account?</span>
+      <a href="" class="link">CREA ACCOUNT</a>
+    </div>
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+      </li>
+      <li>
+        <a href="">Metodo di Pagamento</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href=""> resi</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">spedizione</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">FAQ</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">Contattaci</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+      </li>
+      <li>
+        <a href="">privacy and Cookie policy</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href=""> termini e condizioni</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">termini e condizioni vendita </a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+
+    </ul>
+  </div>
+  <div class="header_stotomenu__mobile">
+    <ul>
+      <li>
+        <embed src="../img/left-chevron.png" type="" />
+        <span class="indietro" href=""> INDIETRO</span>
+      </li>
+      <li>
+        <a href="">About</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href=""> i nostri negozi</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">news & Eventi </a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">Progetti speciali</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">le nostre Boutique</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+      <li>
+        <a href="">profilo aziendale</a>
+        <embed src="../img/right-arrow.png" type="" />
+      </li>
+
     </ul>
   </div>
 
@@ -289,12 +617,12 @@
   </div>
   <footer>
     <div class="servizio_clienti">
-      <span class="servizio_clienti_title">servizio_clienti</span>
+      <span class="servizio_clienti_title">servizio <br> clienti</span>
       <span>Shopping da casa</span>
       <span> Aggiornamenti sui nostri negozi</span>
       <span>Pagamento</span>
       <span> Spedizioni</span>
-      </span> Resi</span>
+      <span> Resi</span>
       <span> FAQ</span>
       <span> Contattaci</span>
     </div>
@@ -314,17 +642,17 @@
     </div>
     <div class="seguici">
       <span class="seguici_title">seguici</span>
-    <a href="https://www.facebook.com/HarmontBlaine"> <i class="fab fa-facebook"></i> </a>
-    <a href="https://www.instagram.com/harmontblaineofficial/"><i class="fab fa-twitter"></i></a>
+      <a href="https://www.facebook.com/HarmontBlaine"> <i class="fab fa-facebook"></i> </a>
+      <a href="https://www.instagram.com/harmontblaineofficial/"><i class="fab fa-twitter"></i></a>
     </div>
-    
   </footer>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="../js/jquery.lockscroll.min.js"></script>
+  <script src="../js/jquery.lockscroll.min.js"></script>
   <script type="text/javascript"
     src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
   <script src="../js/script.js"></script>
+  <script src="../js/bootstrap.min.js"></script>
   
 </body>
 
